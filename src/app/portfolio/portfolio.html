@@ -1,18 +1,18 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-10 mx-auto shadow border rounded-4 m-2 p-4 bg-dark text-white">
+    <div class="col-lg-7 mx-auto shadow border rounded-4 m-2 p-4 bg-dark text-white">
       <div id="projectCarousel" class="carousel slide carousel-dark">
         <div class="carousel-inner px-lg-5">
 
           <div *ngFor="let project of projects; let i = index">
-            <div class="carousel-item" [class.active]="i === 0" style="min-height: 350px;">
+            <div class="carousel-item" [class.active]="i === 0" style="min-height: 370px;">
               <div class="d-flex justify-content-center">
                 <app-project-card [project]="project"></app-project-card> 
               </div>
             </div>
           </div>
 
-          <div class="carousel-item" [class.active]="projects.length === 0" style="min-height: 350px;">
+          <div class="carousel-item" [class.active]="projects.length === 0" style="min-height: 370px;">
             <div class="d-flex justify-content-center">
               <div class="card shadow text-center mx-auto border-0" style="max-width: 400px;">
                 <div class="card-body py-5">

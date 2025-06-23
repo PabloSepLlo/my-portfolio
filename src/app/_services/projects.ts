@@ -14,7 +14,7 @@ export class ProjectsService {
         logo: "assets/logo_simple_blanco.jpg",
         description: "Descripción de Galeno",
         projectLink: "https://github.com/PabloSepLlo/GALENO",
-        tags: [],
+        tags: ["assets/logos/php.svg", "assets/logos/javascript.svg", "assets/logos/mysql.svg", "assets/logos/bootstrap.svg", "assets/logos/html5.svg", "assets/logos/css3.svg"],
         pictures: ["assets/GALENO/menu.png", "assets/GALENO/formularios.png", "assets/GALENO/consultas.png", "assets/GALENO/informes.png"]
       },
       {

@@ -10,8 +10,8 @@
   </div>
   <div class="card-footer bg-dark text-center">
     <div class="d-flex flex-wrap justify-content-center">
-      <div *ngFor="let tag of project.tags">
-        <div>{{tag}}</div>
+      <div *ngFor="let tag of project.tags" class="m-1">
+        <img [src]="tag" alt="tech-logo" width="30" height="30" class="tech-logo">
       </div>
     </div>
   </div>
