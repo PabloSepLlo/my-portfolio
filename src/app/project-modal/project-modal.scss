@@ -1,0 +1,24 @@
+.modal-body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+.ngb-carousel {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a.link-primary {
+  transition: color 0.2s ease;
+}
+
+a.link-primary:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+img {
+  object-fit: cover;
+  max-height: 400px;
+}

@@ -1,0 +1,18 @@
+<div class="card shadow-sm mt-3 bg-dark-gray border-secondary">
+  <div class="card-body text-center d-flex flex-column justify-content-center align-items-center">
+    <h2 class="card-title text-primary fw-bold mb-3">{{project.name}}</h2>
+    <img src="{{project.logo}}" alt="logo_GALENO" width="100" class="mb-3">
+    <p class="card-text flex-grow-1 text-light">{{project.summary}}</p>
+    <a class="btn btn-outline-primary mt-3 align-self-center"
+        (click)="OpenProjectModal()">
+      <i class="bi bi-eye me-1"></i> Ver más
+    </a>
+  </div>
+  <div class="card-footer bg-dark text-center">
+    <div class="d-flex flex-wrap justify-content-center">
+      <div *ngFor="let tag of project.tags">
+        <div>{{tag}}</div>
+      </div>
+    </div>
+  </div>
+</div>
