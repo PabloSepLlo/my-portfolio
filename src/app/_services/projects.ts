@@ -24,7 +24,17 @@ export class ProjectsService {
         summary: "Diferentes proyectos de práctica para Backen en .Net",
         description: '',
         projectLink: '',
-        tags: [],
+        tags: ["assets/logos/dot-net.svg", "assets/logos/dotnetcore.svg"],
+        pictures: ["assets/logo_simple_blanco.jpg", "assets/logo_simple_blanco.jpg"]
+      },
+      {
+        id: 1,
+        name: "My portfolio",
+        logo: "assets/linkedin.jpeg",
+        summary: "Portfolio desarrollado con angular",
+        description: '',
+        projectLink: '',
+        tags: ["assets/logos/angular.svg", "assets/logos/typescript.svg", "assets/logos/bootstrap.svg", "assets/logos/html5.svg", "assets/logos/sass.svg"],
         pictures: ["assets/logo_simple_blanco.jpg", "assets/logo_simple_blanco.jpg"]
       }
     ];

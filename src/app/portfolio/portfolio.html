@@ -1,44 +1,27 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-7 mx-auto shadow border rounded-4 m-2 p-4 bg-dark text-white">
-      <div id="projectCarousel" class="carousel slide carousel-dark">
-        <div class="carousel-inner px-lg-5">
-
-          <div *ngFor="let project of projects; let i = index">
-            <div class="carousel-item" [class.active]="i === 0" style="min-height: 370px;">
-              <div class="d-flex justify-content-center">
-                <app-project-card [project]="project"></app-project-card> 
+    <div class="col-lg-10 mx-auto mb-4 text-white">
+      <div class="row g-4 justify-content-around">
+        <ng-container *ngIf="projects && projects.length > 0; else noProjects">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let project of projects">
+            <app-project-card [project]="project"></app-project-card>
+          </div>
+        </ng-container>
+        <ng-template #noProjects>
+          <div class="col-12">
+            <div class="card shadow text-center mx-auto border-0" style="max-width: 400px;">
+              <div class="card-body py-5">
+                <h5 class="card-title fs-3 text-muted">
+                  <i class="bi bi-three-dots"></i> More to come...
+                </h5>
+                <p class="card-text text-secondary">
+                  Próximamente más proyectos e ideas.
+                </p>
               </div>
             </div>
           </div>
-
-          <div class="carousel-item" [class.active]="projects.length === 0" style="min-height: 370px;">
-            <div class="d-flex justify-content-center">
-              <div class="card shadow text-center mx-auto border-0" style="max-width: 400px;">
-                <div class="card-body py-5">
-                  <h5 class="card-title fs-3 text-muted">
-                    <i class="bi bi-three-dots"></i> More to come...
-                  </h5>
-                  <p class="card-text text-secondary">
-                    Próximamente más proyectos e ideas.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bg-primary rounded p-3" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon bg-primary rounded p-3" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
+        </ng-template>
       </div>
     </div>
   </div>
 </div>
-

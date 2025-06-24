@@ -9,5 +9,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './nav.scss'
 })
 export class Nav {
-
+  
 }
