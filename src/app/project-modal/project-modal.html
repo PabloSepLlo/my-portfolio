@@ -1,13 +1,10 @@
-<div class="modal-header border-0 pb-0">
-  <h4 class="modal-title fw-bold">{{ project.name }}</h4>
+<div class="modal-header border-0 pb-0 bg-cream">
+  <h4 class="modal-title fw-bold dark-gray">{{ project.name }}</h4>
   <button class="btn-close" (click)="activeModal.dismiss()"></button>
 </div>
 
-<div class="modal-body pt-0">
-  <!-- Resumen -->
-  <p class="text-muted fst-italic mb-3">{{ project.summary }}</p>
-
-  <!-- Carrusel de imágenes -->
+<div class="modal-body pt-0 bg-cream">
+  <p class="mb-3">{{ project.summary }}</p>
   <ngb-carousel *ngIf="project.pictures.length > 0" class="rounded overflow-hidden shadow-sm mb-4">
     <ng-template ngbSlide *ngFor="let picture of project.pictures; let i = index">
       <img
@@ -18,11 +15,7 @@
       />
     </ng-template>
   </ngb-carousel>
-
-  <!-- Descripción larga -->
   <p class="lh-lg">{{ project.description }}</p>
-
-  <!-- Enlace al proyecto -->
   <p class="mt-4">
     Puedes encontrar este proyecto en GitHub:
     <a [href]="project.projectLink" target="_blank" class="fw-semibold link-primary text-decoration-none">

@@ -1,0 +1,13 @@
+.btn-outline-cream {
+  color: #f5f0e1; 
+  border: 2px solid #f5f0e1;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-cream:hover,
+.btn-outline-cream:focus {
+  background-color: #d4b483; 
+  color: #2e2e2e;            
+  border-color: #d4b483;
+}

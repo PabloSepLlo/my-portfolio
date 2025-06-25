@@ -1,11 +1,19 @@
-.bg-dark-gray {
-  background-color: #121417 !important; /* más profundo que bg-dark */
+body {
+  background-color: #1c1c1c !important;
+}
+
+dark-gray {
+  background-color: #1c1c1c !important;
 }
 
 .cream {
- color: #f5f5dc;
+  color: #f5f0e1 !important;
+}
+header a:hover {
+  color: #d4b483 !important;
 }
 
-body {
-  background-color: #121417 !important;
+
+.grafite {
+    background-color: #2e2e2e !important;
 }
