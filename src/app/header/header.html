@@ -5,7 +5,7 @@
         <h2 class="display-4 fw-bold mb-3 cream">Pablo Sepúlveda Llorente</h2>
         <h3 class="mb-3 cream">Software Developer</h3>
         <button (click)="DownloadFile()" class="btn btn-outline-cream fw-bold mb-3">
-          Download CV
+          {{ translationService.translate('header.download-cv') }}
         </button>
         <div class="d-flex gap-5 justify-content-center">
           <a href="https://www.linkedin.com/in/pablo-sep%C3%BAlveda-llorente-a395242ab/"
@@ -15,19 +15,26 @@
              aria-label="LinkedIn">
             <img src="assets/social/linkedin.svg" alt="LinkedIn" width="30" height="30">
           </a>
+          <div class="rounded rounded-pill mail d-flex justify-content-center align-items-center gap-2 py-1 px-2 fw-bold">
+            <i class="bi bi-envelope"></i><span>pablosepulveda31&#64;gmail.com</span>
+          </div>
           <a href="https://github.com/PabloSepLlo"
              target="_blank"
              class="social-icon"
              title="GitHub"
              aria-label="GitHub">
             <img src="assets/social/github.svg" alt="GitHub" width="30" height="30">
-          </a>
-          <a href="mailto:pablosepulveda31@gmail.com"
-             class="social-icon"
-             title="Enviar email"
-             aria-label="Email">
-            <img src="assets/social/gmail.svg" alt="Email" width="30" height="30">
-          </a>
+          </a> 
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+          <select 
+            [(ngModel)]="currentLang"
+            (change)="changeLanguage($any($event.target).value)"
+            class="form-select form-select-sm border border-2 border-light rounded-pill text-center"
+          >
+            <option value="es">🇪🇸 Español</option>
+            <option value="en">🇬🇧 English</option>
+          </select>
         </div>
       </div>
       <div class="col-lg-4 d-none d-lg-block">

@@ -18,3 +18,21 @@ a {
 a:hover {
   transform: scale(1.1);
 }
+
+select {
+  background-color: #222; 
+  color: #f5f5dc; 
+  font-weight: bold; 
+  max-width: 150px;
+}
+
+.mail {
+  background-color: #f5f0e1;
+  color: #1c1c1c; 
+}
+.mail:hover {
+  background-color: #d4b483; 
+}
+
+
+

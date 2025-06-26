@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Project } from '../_models/Project';
 import { NgbModal, NgbModalModule, NgbModalOptions, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { ProjectModal } from '../project-modal/project-modal';
+import { TranslationService } from '../_services/translation-service';
 
 @Component({
   selector: 'app-project-card',
@@ -12,10 +13,10 @@ import { ProjectModal } from '../project-modal/project-modal';
   styleUrl: './project-card.scss'
 })
 export class ProjectCard {
-  @Input() project: Project = {} as Project;
+  @Input() project!: Project;
   modalRef?: NgbModalRef;
 
-  constructor(private modalService: NgbModal) {
+  constructor(private modalService: NgbModal, public translationService: TranslationService) {
 
   }
 

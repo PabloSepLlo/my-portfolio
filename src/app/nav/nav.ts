@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslationService } from '../_services/translation-service';
 
 @Component({
   selector: 'app-nav',
@@ -9,5 +10,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './nav.scss'
 })
 export class Nav {
-  
+
+  constructor(public translationService: TranslationService) {}
+
 }

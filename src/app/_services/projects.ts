@@ -10,9 +10,15 @@ export class ProjectsService {
       {
         id: 0,
         name: "Galeno",
-        summary: "Galeno es una aplicación de gestión de pacientes",
+        summary: {
+          en: "Patient management application",
+          es: "Galeno es una aplicación de gestión de pacientes"
+        },
         logo: "assets/logo_simple_blanco.jpg",
-        description: "Descripción de Galeno",
+        description: {
+          en: "Patient management application",
+          es: "Galeno es una aplicación de gestión de pacientes"
+        },
         projectLink: "https://github.com/PabloSepLlo/GALENO",
         tags: ["assets/logos/php.svg", "assets/logos/javascript.svg", "assets/logos/mysql.svg", "assets/logos/bootstrap.svg", "assets/logos/html5.svg", "assets/logos/css3.svg"],
         pictures: ["assets/GALENO/menu.png", "assets/GALENO/formularios.png", "assets/GALENO/consultas.png", "assets/GALENO/informes.png"]
@@ -21,8 +27,14 @@ export class ProjectsService {
         id: 1,
         name: "Lab .Net",
         logo: "assets/linkedin.jpeg",
-        summary: "Diferentes proyectos de práctica para Backen en .Net",
-        description: '',
+        summary: {
+          en: "Patient management application",
+          es: "Galeno es una aplicación de gestión de pacientes"
+        },
+        description: {
+          en: "Patient management application",
+          es: "Galeno es una aplicación de gestión de pacientes"
+        },
         projectLink: '',
         tags: ["assets/logos/dot-net.svg", "assets/logos/dotnetcore.svg"],
         pictures: ["assets/logo_simple_blanco.jpg", "assets/logo_simple_blanco.jpg"]
@@ -31,8 +43,14 @@ export class ProjectsService {
         id: 1,
         name: "My portfolio",
         logo: "assets/linkedin.jpeg",
-        summary: "Portfolio desarrollado con angular",
-        description: '',
+        summary: {
+          en: "Patient management application",
+          es: "Galeno es una aplicación de gestión de pacientes"
+        },
+        description: {
+          en: "Patient management application",
+          es: "Galeno es una aplicación de gestión de pacientes"
+        },
         projectLink: '',
         tags: ["assets/logos/angular.svg", "assets/logos/typescript.svg", "assets/logos/bootstrap.svg", "assets/logos/html5.svg", "assets/logos/sass.svg"],
         pictures: ["assets/logo_simple_blanco.jpg", "assets/logo_simple_blanco.jpg"]
