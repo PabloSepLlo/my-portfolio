@@ -4,7 +4,6 @@
 </div>
 
 <div class="modal-body pt-0 bg-cream">
-  <p class="mb-3">{{ translationService.modalTranslate(project.summary) }}</p>
   <ngb-carousel *ngIf="project.pictures.length > 0" class="rounded overflow-hidden shadow-sm mb-4">
     <ng-template ngbSlide *ngFor="let picture of project.pictures; let i = index">
       <img
@@ -15,9 +14,9 @@
       />
     </ng-template>
   </ngb-carousel>
-  <p class="lh-lg">{{ translationService.modalTranslate(project.description) }}</p>
-  <p class="mt-4">
-    Puedes encontrar este proyecto en GitHub:
+  <p class="text-justified">{{ translationService.modalTranslate(project.description) }}</p>
+  <p class="mt-4 d-flex flex-column justify-content-center align-items-center gap-1">
+    <img src="assets/social/github-black.svg" alt="github" width="50" height="50">
     <a [href]="project.projectLink" target="_blank" class="fw-semibold link-primary text-decoration-none">
       {{ translationService.modalTranslate(project.name) }}
     </a>
