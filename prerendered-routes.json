@@ -1,7 +1,7 @@
 {
   "routes": {
-    "/home": {},
-    "/portfolio": {},
-    "/work-experience": {}
+    "/my-portfolio/home": {},
+    "/my-portfolio/portfolio": {},
+    "/my-portfolio/work-experience": {}
   }
 }
