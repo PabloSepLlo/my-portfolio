@@ -25,7 +25,7 @@ export class ProjectsService {
       },
       {
         id: 1,
-        name: "My portfolio",
+        name: "My Portfolio",
         logo: "assets/logos/angular.svg",
         summary: {
           en: "Portfolio developed with Angular",
