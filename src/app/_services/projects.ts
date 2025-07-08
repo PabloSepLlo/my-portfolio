@@ -41,7 +41,7 @@ export class ProjectsService {
       },
       {
         id: 2,
-        name: ".Net Lab",
+        name: "Authentication .Net Lab",
         logo: "assets/logos/dotnetcore.svg",
         summary: {
           en: "Personal learning and experimentation space with backend technologies",
@@ -51,7 +51,7 @@ export class ProjectsService {
           en: "A technical lab built to explore backend development with .NET. It will include experiments with clean architecture, DDD, messaging systems, APIs, service orchestration, and integration testing",
           es: "Laboratorio técnico orientado a la exploración del desarrollo backend con .NET. Incluirá prácticas con Clean Architecture, Domain-Driven Design, sistemas de mensajería, desarrollo de APIs, orquestación de servicios y pruebas de integración"
         },
-        projectLink: "https://github.com/PabloSepLlo/.net-lab",
+        projectLink: "https://github.com/PabloSepLlo/DotNetLabAuth",
         tags: ["assets/logos/dot-net.svg", "assets/logos/dotnetcore.svg","assets/logos/swagger.svg"],
         pictures: ["assets/lab/ddd.jpg", "assets/lab/.net.png"]
       }
