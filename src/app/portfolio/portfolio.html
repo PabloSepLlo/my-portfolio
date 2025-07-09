@@ -3,7 +3,7 @@
     <div class="col-lg-10 mx-auto g-3 mb-4 text-white">
       <div class="row g-4 d-flex justify-content-around align-items-center">
         <ng-container *ngIf="projects && projects.length > 0;">
-          <div class="col-12 col-lg-6 col-xl-3" *ngFor="let project of projects">
+          <div class="col-sm-10 col-md-10 col-lg-10 col-xl-6 col-xxl-3" *ngFor="let project of projects">
             <app-project-card [project]="project"></app-project-card>
           </div>
         </ng-container>

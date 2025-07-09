@@ -11,7 +11,7 @@ export class ProjectsService {
         id: 0,
         name: "Galeno",
         summary: {
-          en: "Galeno is a patient data management and consultation application designed for clinics and healthcare professionals.",
+          en: "Galeno is a patient data management and consultation application designed for clinics and healthcare professionals",
           es: "Galeno es una aplicación de gestión y consulta de datos de pacientes, orientado a clínicas o profesionales de la salud"
         },
         logo: "assets/logo_simple_blanco.jpg",
@@ -44,16 +44,16 @@ export class ProjectsService {
         name: "Authentication .Net Lab",
         logo: "assets/logos/dotnetcore.svg",
         summary: {
-          en: "Personal learning and experimentation space with backend technologies",
-          es: "Espacio personal de aprendizaje y experimentación con tecnologías backend"
+          en: "Personal learning and experimentation space focused on Backend technologies, with the goal of exploring modern design patterns and architectural best practices to build a solid foundation for authentication in .NET applications — keeping a modular, testable, and scalable approach.",
+          es: "Espacio personal de aprendizaje y experimentación con tecnologías Backend con el objetivo de explorar patrones de diseño modernos y buenas prácticas de arquitectura para construir una base sólida de autenticación en aplicaciones .NET, manteniendo un enfoque modular, testable y escalable."
         },
         description: {
-          en: "A technical lab built to explore backend development with .NET. It will include experiments with clean architecture, DDD, messaging systems, APIs, service orchestration, and integration testing",
-          es: "Laboratorio técnico orientado a la exploración del desarrollo backend con .NET. Incluirá prácticas con Clean Architecture, Domain-Driven Design, sistemas de mensajería, desarrollo de APIs, orquestación de servicios y pruebas de integración"
+          en: "This project is a practical lab focused on implementing JWT-based authentication, applying the principles of CQRS (Command and Query Responsibility Segregation) and Clean Architecture in .NET.",
+          es: "Este proyecto es un laboratorio práctico centrado en la implementación de autenticación basada en JWT, utilizando los principios de CQRS (Command and Query Responsibility Segregation) y una arquitectura limpia (Clean Architecture) en .NET."
         },
         projectLink: "https://github.com/PabloSepLlo/DotNetLabAuth",
         tags: ["assets/logos/dot-net.svg", "assets/logos/dotnetcore.svg","assets/logos/swagger.svg"],
-        pictures: ["assets/lab/ddd.jpg", "assets/lab/.net.png"]
+        pictures: ["assets/lab/code.png", "assets/lab/swagger.png", "assets/lab/ddd.jpg", "assets/lab/.net.png"]
       }
     ];
 
