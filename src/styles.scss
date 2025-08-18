@@ -17,3 +17,18 @@ header a:hover {
 .grafite {
     background-color: #2e2e2e !important;
 }
+
+.animationCont {
+  animation: animationCont 0.8s ease-out forwards;
+}
+
+@keyframes animationCont {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
