@@ -1,11 +1,30 @@
-<div class="container-fluid d-flex justify-content-center">
+<div class="container-fluid d-flex justify-content-center mt-3">
   <div class="row">
-    <div class="col-lg-10 mx-auto border rounded-4 m-3 p-4 grafite cream ">
+    <div class="col-lg-8 mx-auto border rounded-4 m-3 p-4 grafite cream ">
       <div class="text-center">
         <h1 class="title">{{ translationService.translate('about.title') }}</h1>
-        <p class="lead fs-5 text-justify" style="white-space: pre-line;">
+        <p class="lead fs-5 text-justify my-5" style="white-space: pre-line;">
           {{ translationService.translate('about.description') }}
         </p>
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="https://www.linkedin.com/in/pablo-sep%C3%BAlveda-llorente-a395242ab/"
+             target="_blank"
+             class="social-icon"
+             title="LinkedIn"
+             aria-label="LinkedIn">
+            <img src="assets/social/linkedin.svg" alt="LinkedIn" width="30" height="30">
+          </a>
+          <div class="rounded rounded-pill mail d-flex justify-content-center align-items-center gap-2 py-1 px-2 fw-bold">
+            <i class="bi bi-envelope"></i><span>pablosepulveda31&#64;gmail.com</span>
+          </div>
+          <a href="https://github.com/PabloSepLlo"
+             target="_blank"
+             class="social-icon"
+             title="GitHub"
+             aria-label="GitHub">
+            <img src="assets/social/github.svg" alt="GitHub" width="30" height="30">
+          </a> 
+        </div>
       </div>
     </div>
   </div>
