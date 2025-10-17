@@ -1,16 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { TranslationService } from '../_services/translation-service';
+import { ExperiencesService } from '../_services/experiences';
+import { ExperienceCard } from '../experience-card/experience-card';
+import { CommonModule } from '@angular/common';
+import { Experience } from '../_models/Experience';
 
 @Component({
   selector: 'app-work-experience',
   standalone: true,
-  imports: [],
+  imports: [ ExperienceCard, CommonModule ],
   templateUrl: './work-experience.html',
   styleUrl: './work-experience.scss'
 })
-export class WorkExperience {
-    constructor(private titleService: Title, public translationService: TranslationService) {
+export class WorkExperience implements OnInit {
+
+  experiences = {} as Experience[];
+
+  constructor(private titleService: Title, public experienceService: ExperiencesService) {
     this.titleService.setTitle("Pablo Sepúlveda Llorente - Work Experience")
+  }
+
+  ngOnInit(): void {
+      this.experiences = this.experienceService.GetExperiences();
   }
 }

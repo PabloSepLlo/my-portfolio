@@ -1,3 +1,11 @@
+header {
+  position: fixed;       
+  top: 0;                
+  left: 0;
+  width: 100%;           
+  z-index: 1000;         
+}
+
 .btn-outline-cream {
   color: #f5f0e1; 
   border: 2px solid #f5f0e1;

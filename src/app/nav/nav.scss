@@ -1,7 +1,9 @@
-.navbar-toggler.cream {
-  border: none;
-  outline: none;
-  box-shadow: none;
+nav {
+  position: fixed;       
+  top: 275px;                
+  left: 0;
+  width: 100%;           
+  z-index: 1000;     
 }
 
 .navbar-toggler.cream .navbar-toggler-icon {
