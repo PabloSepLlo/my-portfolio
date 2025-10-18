@@ -30,7 +30,7 @@ export class Header implements OnInit, OnDestroy {
   DownloadFile() {
     const link = this.renderer.createElement("a");
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'assets/CV Pablo Sepúlveda Llorente.pdf');
+    link.setAttribute('href', 'assets/CV Pablo Sepúlveda Llorente 2025.pdf');
     link.setAttribute('download', 'CV Pablo Sepúlveda Llorente.pdf');
     link.click();
     link.remove();
