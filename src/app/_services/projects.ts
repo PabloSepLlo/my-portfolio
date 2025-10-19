@@ -49,7 +49,7 @@ export class ProjectsService {
         },
         description: {
           en: "This portfolio was developed using Angular and serves both as a presentation of my work and a demonstration of my frontend development skills. It includes an integrated translation service supporting both English and Spanish, highlighting internationalization features and a clean application architecture",
-          es: "Este portafolio ha sido desarrollado utilizando Angular y funciona tanto como una presentación de mi trabajo como una demostración de mis habilidades en desarrollo frontend. Incluye un servicio de traducción integrado para soportar tanto inglés como español, destacando características de internacionalización y una arquitectura limpia de la aplicación"
+          es: "Este portfolio ha sido desarrollado utilizando Angular y funciona tanto como una presentación de mi trabajo como una demostración de mis habilidades en desarrollo frontend. Incluye un servicio de traducción integrado para soportar tanto inglés como español, destacando características de internacionalización y una arquitectura limpia de la aplicación"
         },
         projectLink: "https://github.com/PabloSepLlo/my-portfolio",
         tags: ["assets/logos/angular.svg", "assets/logos/typescript.svg", "assets/logos/bootstrap.svg", "assets/logos/html5.svg", "assets/logos/sass.svg"],
